@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version='1.0'>
+    <qresource>
+        <file>images/cspace16.png</file>
+        <file>images/cspace24.png</file>
+        <file>images/cspace32.png</file>
+        <file>images/cspace48.png</file>
+    </qresource>
+</RCC>

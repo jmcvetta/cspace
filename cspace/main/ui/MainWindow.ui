@@ -1,0 +1,531 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>283</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CSpace</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="images.qrc" >:/images/cspace32.png</iconset>
+  </property>
+  <property name="iconSize" >
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QVBoxLayout" >
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <property name="spacing" >
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stack" >
+      <property name="currentIndex" >
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="contactsPage" >
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QListWidget" name="contacts" >
+          <property name="contextMenuPolicy" >
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="iconSize" >
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="resizeMode" >
+           <enum>QListView::Adjust</enum>
+          </property>
+          <item>
+           <property name="text" >
+            <string>Item 1</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="images.qrc" >:/images/user_online.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text" >
+            <string>Item 2</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="images.qrc" >:/images/user_offline.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text" >
+            <string>Item 3</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="images.qrc" >:/images/user_online.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text" >
+            <string>Item 4</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="images.qrc" >:/images/user_offline.png</iconset>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="offlinePage" >
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="goOnlineButton" >
+            <property name="text" >
+             <string>Go Online...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="createKeyButton" >
+            <property name="text" >
+             <string>Create Private Key...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="offlineNoUsersPage" >
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="createKeyButton1" >
+            <property name="text" >
+             <string>Create Private Key...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="connectingPage" >
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="connectStatus" >
+              <property name="text" >
+               <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Connect failed.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;">Reconnecting in 30 second(s)...&lt;/p>&lt;/body>&lt;/html></string>
+              </property>
+              <property name="alignment" >
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="connectCancelButton" >
+              <property name="text" >
+               <string>Cancel</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>283</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Help" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAboutCSpace" />
+   </widget>
+   <widget class="QMenu" name="menuC_ontacts" >
+    <property name="title" >
+     <string>C&amp;ontacts</string>
+    </property>
+    <addaction name="actionAddContact" />
+    <addaction name="actionRefreshStatus" />
+   </widget>
+   <widget class="QMenu" name="menu_CSpace" >
+    <property name="title" >
+     <string>&amp;CSpace</string>
+    </property>
+    <addaction name="actionGoOnline" />
+    <addaction name="actionGoOffline" />
+    <addaction name="actionKeyInfo" />
+    <addaction name="separator" />
+    <addaction name="actionCreateKey" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <widget class="QMenu" name="menuO_ptions" >
+    <property name="title" >
+     <string>O&amp;ptions</string>
+    </property>
+    <addaction name="actionEditPermissions" />
+   </widget>
+   <addaction name="menu_CSpace" />
+   <addaction name="menuC_ontacts" />
+   <addaction name="menuO_ptions" />
+   <addaction name="menu_Help" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize" >
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="actionGoOnline" />
+   <addaction name="actionCreateKey" />
+   <addaction name="actionGoOffline" />
+   <addaction name="actionExit" />
+   <addaction name="separator" />
+   <addaction name="actionAddContact" />
+   <addaction name="actionRefreshStatus" />
+  </widget>
+  <action name="actionCreateKey" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/register32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Create Private Key...</string>
+   </property>
+   <property name="iconText" >
+    <string>Create Private Key</string>
+   </property>
+   <property name="toolTip" >
+    <string>Create Private Key</string>
+   </property>
+  </action>
+  <action name="actionGoOnline" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/connect32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Go Online...</string>
+   </property>
+  </action>
+  <action name="actionGoOffline" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/disconnect32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Go &amp;Offline</string>
+   </property>
+  </action>
+  <action name="actionExit" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/exit32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionAddContact" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/user_add32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Add Contact...</string>
+   </property>
+   <property name="iconText" >
+    <string>Add Contact</string>
+   </property>
+   <property name="toolTip" >
+    <string>Add Contact</string>
+   </property>
+  </action>
+  <action name="actionRefreshStatus" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/refresh32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Refresh &amp;Status</string>
+   </property>
+  </action>
+  <action name="actionCheckStatus" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/refresh32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Check Status</string>
+   </property>
+  </action>
+  <action name="actionContactInfo" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/contact_info32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Contact &amp;Information...</string>
+   </property>
+  </action>
+  <action name="actionRemoveContact" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/user_remove32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Remove Contact</string>
+   </property>
+  </action>
+  <action name="actionEditPermissions" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/edit_permissions32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Edit Permissions...</string>
+   </property>
+  </action>
+  <action name="actionAboutCSpace" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/cspace32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;About CSpace...</string>
+   </property>
+  </action>
+  <action name="actionKeyInfo" >
+   <property name="icon" >
+    <iconset resource="images.qrc" >:/images/key_info32.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Key Information...</string>
+   </property>
+  </action>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <resources>
+  <include location="images.qrc" />
+ </resources>
+ <connections/>
+</ui>
