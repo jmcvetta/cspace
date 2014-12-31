@@ -25,7 +25,7 @@ computer, in case it gets censored in the future.
 ## Disclaimers
 
 I did not write CSpace; do not use it; do not have any insight into its
-original authorship or purposes; have not reaviewed the code in any meaninful
+original authorship or purposes; have not reviewed the code in any meaninful
 way; cannot help you with bugs/support/etc; and do not assert the truth or
 falsehood of the CSpace privacy claims.  
 
