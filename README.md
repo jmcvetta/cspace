@@ -18,6 +18,9 @@ and no copyright or license statements could be found therein or on the hosting
 site, I am making a good faith assumption that it is public domain (or some
 similar legal fiction, as appropriate).  
 
+If you find CSpace interesting, you may wish to clone this repo to your local
+computer, in case it gets censored in the future.
+
 
 ## Disclaimers
 
