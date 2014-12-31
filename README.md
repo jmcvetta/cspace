@@ -1,4 +1,4 @@
-CSpace is peer-to-peer communication software of unknown origin, purporting to
+CSpace is peer-to-peer communication software of unknown origin, claiming to
 offer users an unusually high degree of privacy.
 
 
