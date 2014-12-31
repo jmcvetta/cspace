@@ -12,7 +12,7 @@ tools, may result in NSA's "near-total loss/lack of insight to target
 communications, presence".  
 
 The CSpace source code was downloaded from
-[cspace.aabdalla.com/](http://cspace.aabdalla.com/releases/cspace-0.1.27.tar.gz)
+[cspace.aabdalla.com](http://cspace.aabdalla.com/releases/cspace-0.1.27.tar.gz)
 on 31 December 2014 from an IP address (most likely subject to surveillance) in
 San Francisco.  Since the code was freely available for public download, and no
 copyright or licence statements could be found therein or on the hosting site,
