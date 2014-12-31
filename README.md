@@ -5,7 +5,7 @@ offer users an unusually high degree of privacy.
 ## Background
 
 CSpace was brought to public attention by mention in a document 
-([http://www.spiegel.de/media/media-35535.pdf](http://www.spiegel.de/media/media-35535.pdf),
+([www.spiegel.de/media/media-35535.pdf](http://www.spiegel.de/media/media-35535.pdf),
 page 20) purportedly leaked by NSA whistleblower 
 [Edward Snowden](http://en.wikipedia.org/wiki/Edward_Snowden).  The document
 suggests use of CSpace, in conjunction with other named tools, may result in
