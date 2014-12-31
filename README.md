@@ -13,10 +13,12 @@ NSA's "near-total loss/lack of insight to target communications, presence".
 
 The CSpace source code was downloaded from
 [cspace.aabdalla.com](http://cspace.aabdalla.com/releases/cspace-0.1.27.tar.gz)
-on 31 December 2014.  Since the code was freely available for public download,
+on 31 December 2014.  The code was freely available to the public for download,
 and no copyright or license statements could be found therein or on the hosting
-site, I am making a good faith assumption that it is public domain (or some
-similar legal fiction, as appropriate).  
+site.  I am therefore making a good faith assumption that it is public domain
+(or analagous legal construct, as appropriate).   The [draft CSpace Wikipedia 
+page](http://en.wikipedia.org/wiki/Draft:CSpace) lists the license as GPL, but
+I can find no other evidence to support that claim.
 
 If you find CSpace interesting, you may wish to clone this repo to your local
 computer, in case it gets censored in the future.
