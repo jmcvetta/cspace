@@ -22,13 +22,15 @@ legal fiction, as appropriate).
 
 ## Disclaimers
 
-I did not write CSpace; do not have any insight into its original authorship or
-purposes; have not reaviewed the code in any meaninful way; cannot help you
-with bugs/support/etc; and do not assert the truth or falsehood of the CSpace
-privacy claims.  I have *no freakin' idea* if this software works at all.  I
-have uploaded the source to Github to foster healthy, open civic debate.
+I did not write CSpace; do not use it; do not have any insight into its
+original authorship or purposes; have not reaviewed the code in any meaninful
+way; cannot help you with bugs/support/etc; and do not assert the truth or
+falsehood of the CSpace privacy claims.  
+
+I have *no freakin' idea* if this software works at all.  I have uploaded the
+source to Github to foster healthy, open civic debate.
 
 There is a decent chance that users of this software will experience
-*increased* surveillance and resultingly *decreased* personal privacy.
+increased surveillance and resultingly *decreased* personal privacy.
 
-Do not use this software; or if you must, use it at your own risk.  
+**Do not use this software**; or if you must, use it at your own risk.  
