@@ -4,8 +4,8 @@ offer users an unusually high degree of privacy.
 
 ## Background
 
-CSpace was made famous by inclusion in a document purportedly leaked by Edward
-Snowden -
+CSpace was brought to public attention by mention in a document purportedly
+leaked by NSA whistleblower [Edward Snowden](http://en.wikipedia.org/wiki/Edward_Snowden) -
 [http://www.spiegel.de/media/media-35535.pdf](http://www.spiegel.de/media/media-35535.pdf),
 page 20.  The document suggests use of CSpace, in conjunction with other named
 tools, may result in NSA's "near-total loss/lack of insight to target
