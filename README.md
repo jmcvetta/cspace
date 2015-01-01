@@ -1,6 +1,11 @@
 CSpace is peer-to-peer communication software of unknown origin, claiming to
 offer users an unusually high degree of privacy.
 
+Descriptions of CSpace are available at
+[anonymous-p2p.org](http://www.anonymous-p2p.org/cspace.html) and on the
+[Planet Peer forum](http://board.planetpeer.de/index.php?topic=1852.0).  It is
+unknown whether these descriptions were written by the CSpace author(s).
+
 
 ## Background
 
