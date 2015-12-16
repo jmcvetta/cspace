@@ -79,24 +79,63 @@ It is unknown whether these descriptions were written by the CSpace author(s).
 
 ## Background
 
-CSpace was brought to public attention by mention in a document 
+CSpace was brought to public attention by mention in a document
 ([www.spiegel.de/media/media-35535.pdf](http://www.spiegel.de/media/media-35535.pdf),
-page 20) purportedly leaked by NSA whistleblower 
-[Edward Snowden](http://en.wikipedia.org/wiki/Edward_Snowden).  The document
-suggests use of CSpace, in conjunction with other named tools, may result in
-NSA's "near-total loss/lack of insight to target communications, presence".  
+page 20) purportedly leaked by NSA whistleblower [Edward
+Snowden](http://en.wikipedia.org/wiki/Edward_Snowden).  The document suggests
+use of CSpace, in conjunction with other named tools, may result in NSA's
+"near-total loss/lack of insight to target communications, presence".  
 
 The CSpace source code was downloaded from
 [cspace.aabdalla.com](http://cspace.aabdalla.com/releases/cspace-0.1.27.tar.gz)
 on 31 December 2014.  The code was freely available to the public for download,
 and no copyright or license statements could be found therein or on the hosting
 site.  I am therefore making a good faith assumption that it is public domain
-(or analagous legal construct, as appropriate).   The [draft CSpace Wikipedia 
+(or analagous legal construct, as appropriate).   The [draft CSpace Wikipedia
 page](http://en.wikipedia.org/wiki/Draft:CSpace) lists the license as GPL, but
 I can find no other evidence to support that claim.
 
 If you find CSpace interesting, you may wish to clone this repo to your local
 computer, in case it gets censored in the future.
+
+
+## History
+
+The following history was
+[provided](https://github.com/jmcvetta/cspace/issues/2) by
+[@rep-movsd](https://github.com/rep-movsd):
+
+> CSpace was the brain child of Tachyon Technologies, an Indian startup, where I
+> worked for a few years.
+> 
+> Tachyon was started by a couple of IIT-Madras graduates, who wanted to build
+> great software products rather than become an IT shop as most other Indian
+> companies did.
+> 
+> These two guys:
+> 
+> * Ram Prakash H ( developer of Quillpad) -
+> 	http://www2.technologyreview.com/TR35/Profile.aspx?TRID=868
+> * KS Sreeram (Creator of the Clay programming language)
+> 	https://www.reddit.com/r/programming/comments/ctmxx/the_clay_programming_language/
+> 
+> I can give you some history about it:
+> 
+> In 2002, we had built a standalone application called CSpace, that was a
+> multiparty conference tool, supporting a shared whiteboard, document sharing,
+> audio conferencing and application sharing (remote viewing) . The product was
+> branded as Expressmeet and licensed to Sify Technologies.
+> 
+> However we wanted to keep the CSpace name for something even better. So Sreeram
+> decided to build a completely secure P2P platform based on Chord networks. The
+> idea was that instead of having a model where you connect to IP:Port, you
+> should be able to connect to User:Service and the CSpace platform would do the
+> rest, with unholy levels of security.
+> 
+> It was developed in python and QT and the product worked wonderfully for a few
+> years. But the problem was that there would always have to be some sort of
+> central registry of logged on users. There was a server provided by Sify
+> Infotech for a while, but I believe that went away and CSpace languished.
 
 
 ## Disclaimers
