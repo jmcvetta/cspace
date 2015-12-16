@@ -1,10 +1,80 @@
 CSpace is peer-to-peer communication software of unknown origin, claiming to
 offer users an unusually high degree of privacy.
 
-Descriptions of CSpace are available at
-[anonymous-p2p.org](http://www.anonymous-p2p.org/cspace.html) and on the
-[Planet Peer forum](http://board.planetpeer.de/index.php?topic=1852.0).  It is
-unknown whether these descriptions were written by the CSpace author(s).
+CSpace was described by 
+[anonymous-p2p.org](http://www.anonymous-p2p.org/cspace.html):
+
+> CSpace provides a platform for secure, decentralized, user-to-user
+> communication over the internet. The driving idea behind the CSpace
+> platform is to provide a connect(user,service) primitive, similar to the
+> sockets API connect(ip,port). Applications built on top of CSpace can
+> simply invoke connect(user,service) to establish a connection. The CSpace
+> platform will take care of locating the user and creating a secure,
+> nat/firewall friendly connection. Thus the application developers are
+> relieved of the burden of connection establishment, and can focus on the
+> application-level logic!
+> 
+> CSpace is developed in Python. It uses OpenSSL for crypto, and Qt for the
+> GUI.  CSpace is licensed under the GPL.
+> 
+> *What applications are available now?*
+> 
+> The following applications are currently available with CSpace:
+> 
+> * Text Chat
+> * File Transfer
+> * Remote Desktop (based on VNC)
+> 
+> *How does it work?*
+> 
+> Here are some of the salient points regarding the CSpace architecture:
+> 
+> User Identity
+> 
+> * All users create 2048-bit RSA keys for themselves.
+> * A user is uniquely identified by his RSA public key.
+> * Every user has a contact list, which is just a list of public keys known
+> 	to that user.
+> * A user assigns names to the public keys in his contact list. This is done
+> 	because it is easier to display & manage names rather than raw public
+> 	keys.
+> * CSpace ensures that there are no duplicate names present in the contact
+> 	list.  This is done to allow a contact name to uniquely identify a
+> 	public key in the contact list.
+> * To help with the exchange of public keys between users, a key server is
+> 	used (somewhat like PGP key servers).
+> 
+> Decentralized Network
+> 
+> * A Distributed Hash Table (DHT) based on the Kademlia protocol is used.
+> * When a user goes online, a mapping from his public key to his ip-address
+> 	is created in the DHT.
+> * CSpace also registers with third party routers, so that the user can
+> 	receive connections even if he is behind a nat/firewall.
+> 
+> Connection Process
+> 
+> * When an application wants to utilize the CSpace platform, it establishes
+> 	a local connection to the CSpace instance, and issues a connect
+> 	request, say, something along the lines of connect(alice,TextChat).
+> * CSpace obtains the destination user's public key by looking up the name
+> 	in the contact list.
+> * The DHT is used to obtain the destination user's network location (ip
+> 	address).
+> * A TCP connection is established to the destination user's network
+> 	address. In case the destination user is behind a nat/firewall, then a
+> 	proxied connection is established using a third party router.
+> * A secure channel is established using the TLS protocol.
+> * The service name which was requested (say TextChat) is sent over the
+> 	secure channel, and the destination CSpace instance responds with a
+> 	success code.
+> * The application which issued the connect request is notified about the
+> 	successful connection. CSpace proxies the data between the local
+> 	application and the secure channel. Thus the application only sees a
+> 	plain TCP connection to localhost.
+
+It is unknown whether these descriptions were written by the CSpace author(s).
+
 
 
 ## Background
